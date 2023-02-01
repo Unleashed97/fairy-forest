@@ -7,6 +7,10 @@
 // fonts
 @import 'fonts.scss';
 
+:root {
+    --proportionIndex: calc(1vw + 1vh);
+}
+
 *,
 *::before,
 *::after {
@@ -20,6 +24,10 @@ html {
 body {
     font-family: $family;
     font-size: 1.6rem;
+
+    background-color: #010101;
+    color: #fff;
+    line-height: 1.55;
 }
 
 ul {
@@ -48,3 +56,5 @@ p {
 @import 'components/footer.scss';
 @import 'components/container.scss';
 @import 'components/nav.scss';
+@import 'components/layers.scss';
+@import 'components/section.scss';

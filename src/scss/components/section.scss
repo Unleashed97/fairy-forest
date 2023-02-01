@@ -1,0 +1,20 @@
+.section {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../img/dungeon.jpg');
+
+    &__text-block {
+        max-width: 600px;
+
+        text-align: center;
+    }
+
+    &__title {
+    }
+}
