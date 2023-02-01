@@ -8,13 +8,24 @@
     justify-content: center;
 
     background-image: url('../img/dungeon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &__text-block {
         max-width: 600px;
 
+        color: $colors-text;
         text-align: center;
     }
 
     &__title {
+        font-size: calc(var(--proportionIndex) * 2);
+        letter-spacing: calc(var(--proportionIndex) * 0.2);
+        margin-bottom: calc(var(--proportionIndex) * 1);
+    }
+
+    &__text {
+        font-size: calc(var(--proportionIndex) * 0.7);
     }
 }

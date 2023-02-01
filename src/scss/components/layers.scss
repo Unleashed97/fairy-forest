@@ -25,7 +25,7 @@
         z-index: 1;
 
         text-align: center;
-        color: #f7f0ce;
+        color: $colors-text;
         text-shadow: 0 0 10px #c2ab36;
 
         transform: translate3d(0, calc(var(--scrollTop) / 2), 0);

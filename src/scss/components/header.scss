@@ -5,11 +5,17 @@
         content: '';
 
         position: absolute;
+        bottom: calc(var(--proportionIndex) * -2);
+        left: 0;
+        right: 0;
 
         width: 100%;
-        height: 300px;
+        height: calc(var(--proportionIndex) * 5);
         z-index: 10;
 
-        background-image: url();
+        background-image: url('../img/ground.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }

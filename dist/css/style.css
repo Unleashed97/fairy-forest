@@ -368,10 +368,16 @@ p {
 .header::after {
   content: "";
   position: absolute;
+  bottom: calc(var(--proportionIndex) * -2);
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 300px;
+  height: calc(var(--proportionIndex) * 5);
   z-index: 10;
-  background-image: url();
+  background-image: url("../img/ground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -435,8 +441,20 @@ p {
   align-items: center;
   justify-content: center;
   background-image: url("../img/dungeon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section__text-block {
   max-width: 600px;
+  color: #f7f0ce;
   text-align: center;
+}
+.section__title {
+  font-size: calc(var(--proportionIndex) * 2);
+  letter-spacing: calc(var(--proportionIndex) * 0.2);
+  margin-bottom: calc(var(--proportionIndex) * 1);
+}
+.section__text {
+  font-size: calc(var(--proportionIndex) * 0.7);
 }
